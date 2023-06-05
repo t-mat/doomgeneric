@@ -641,7 +641,7 @@ void M_SaveSelect(int choice)
     M_StringCopy(saveOldString,savegamestrings[choice], SAVESTRINGSIZE);
     if (!strcmp(savegamestrings[choice], EMPTYSTRING))
 	savegamestrings[choice][0] = 0;
-    saveCharIndex = strlen(savegamestrings[choice]);
+    saveCharIndex = (int) strlen(savegamestrings[choice]);
 }
 
 //
@@ -1989,7 +1989,7 @@ void M_Drawer (void)
             if (!foundnewline)
             {
                 M_StringCopy(string, messageString + start, sizeof(string));
-                start += strlen(string);
+                start += (int) strlen(string);
             }
 
 	    x = SCREENWIDTH/2 - M_StringWidth(string) / 2;

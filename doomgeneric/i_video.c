@@ -165,7 +165,7 @@ void cmap_to_fb(uint8_t * out, uint8_t * in, int in_pixels)
         pix |= b << s_Fb.blue.offset;
 
         for (k = 0; k < fb_scaling; k++) {
-            for (j = 0; j < s_Fb.bits_per_pixel/8; j++) {
+            for (j = 0; j < (int) (s_Fb.bits_per_pixel/8); j++) {
                 *out = (pix >> (j*8));
                 out++;
             }
@@ -212,7 +212,7 @@ void I_InitGraphics (void)
         printf("I_InitGraphics: Scaling factor: %d\n", fb_scaling);
     } else {
         fb_scaling = s_Fb.xres / SCREENWIDTH;
-        if (s_Fb.yres / SCREENHEIGHT < fb_scaling)
+        if ((int) s_Fb.yres / SCREENHEIGHT < fb_scaling)
             fb_scaling = s_Fb.yres / SCREENHEIGHT;
         printf("I_InitGraphics: Auto-scaling factor: %d\n", fb_scaling);
     }

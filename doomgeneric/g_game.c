@@ -1225,7 +1225,7 @@ void G_DeathMatchSpawnPlayer (int playernum)
     int             i,j; 
     int				selections; 
 	 
-    selections = deathmatch_p - deathmatchstarts; 
+    selections = (int) (deathmatch_p - deathmatchstarts); 
     if (selections < 4) 
 	I_Error ("Only %i deathmatch spots, 4 required", selections); 
  
@@ -1932,7 +1932,7 @@ static void IncreaseDemoBuffer(void)
 
     // Find the current size
 
-    current_length = demoend - demobuffer;
+    current_length = (int) (demoend - demobuffer);
     
     // Generate a new buffer twice the size
     new_length = current_length * 2;
@@ -2015,7 +2015,7 @@ void G_RecordDemo (char *name)
 
     usergame = false;
     demoname_size = strlen(name) + 5;
-    demoname = Z_Malloc(demoname_size, PU_STATIC, NULL);
+    demoname = Z_Malloc((int) demoname_size, PU_STATIC, NULL);
     M_snprintf(demoname, demoname_size, "%s.lmp", name);
     maxsize = 0x20000;
 
@@ -2290,7 +2290,7 @@ boolean G_CheckDemoStatus (void)
     if (demorecording) 
     { 
 	*demo_p++ = DEMOMARKER; 
-	M_WriteFile (demoname, demobuffer, demo_p - demobuffer); 
+	M_WriteFile (demoname, demobuffer, (int) (demo_p - demobuffer)); 
 	Z_Free (demobuffer); 
 	demorecording = false; 
 	I_Error ("Demo %s recorded",demoname); 

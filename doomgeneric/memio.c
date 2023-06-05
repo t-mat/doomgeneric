@@ -80,7 +80,7 @@ size_t mem_fread(void *buf, size_t size, size_t nmemb, MEMFILE *stream)
 
 	// Update position
 
-	stream->position += items * size;
+	stream->position += (unsigned int) (items * size);
 	
 	return items;
 }
@@ -94,7 +94,7 @@ MEMFILE *mem_fopen_write(void)
 	file = Z_Malloc(sizeof(MEMFILE), PU_STATIC, 0);
 
 	file->alloced = 1024;
-	file->buf = Z_Malloc(file->alloced, PU_STATIC, 0);
+	file->buf = Z_Malloc((int) file->alloced, PU_STATIC, 0);
 	file->buflen = 0;
 	file->position = 0;
 	file->mode = MODE_WRITE;
@@ -122,7 +122,7 @@ size_t mem_fwrite(const void *ptr, size_t size, size_t nmemb, MEMFILE *stream)
 	{
 		unsigned char *newbuf;
 
-		newbuf = Z_Malloc(stream->alloced * 2, PU_STATIC, 0);
+		newbuf = Z_Malloc((int) stream->alloced * 2, PU_STATIC, 0);
 		memcpy(newbuf, stream->buf, stream->alloced);
 		Z_Free(stream->buf);
 		stream->buf = newbuf;
@@ -132,7 +132,7 @@ size_t mem_fwrite(const void *ptr, size_t size, size_t nmemb, MEMFILE *stream)
 	// Copy into buffer
 	
 	memcpy(stream->buf + stream->position, ptr, bytes);
-	stream->position += bytes;
+	stream->position += (unsigned int) bytes;
 
 	if (stream->position > stream->buflen)
 		stream->buflen = stream->position;

@@ -166,7 +166,7 @@ byte *I_ZoneBase (int *size)
 void I_PrintBanner(char *msg)
 {
     int i;
-    int spaces = 35 - (strlen(msg) / 2);
+    int spaces = (int) (35 - (strlen(msg) / 2));
 
     for (i=0; i<spaces; ++i)
         putchar(' ');
@@ -414,8 +414,8 @@ void I_Error (char *error, ...)
         wchar_t wmsgbuf[512];
 
         MultiByteToWideChar(CP_ACP, 0,
-                            msgbuf, strlen(msgbuf) + 1,
-                            wmsgbuf, sizeof(wmsgbuf));
+                            msgbuf, (int) (strlen(msgbuf) + 1),
+                            wmsgbuf, (int) sizeof(wmsgbuf));
 
         MessageBoxW(NULL, wmsgbuf, L"", MB_OK);
     }

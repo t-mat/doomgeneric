@@ -99,7 +99,7 @@ static void ExtendLumpInfo(int newnumlumps)
     // Copy over lumpinfo_t structures from the old array. If any of
     // these lumps have been cached, we need to update the user
     // pointers to the new location.
-    for (i = 0; i < numlumps && i < newnumlumps; ++i)
+    for (i = 0; i < numlumps && i < (unsigned int) newnumlumps; ++i)
     {
         memcpy(&newlumpinfo[i], &lumpinfo[i], sizeof(lumpinfo_t));
 
@@ -112,7 +112,7 @@ static void ExtendLumpInfo(int newnumlumps)
         // been loaded, but just in case...
         if (lumpinfo[i].next != NULL)
         {
-            int nextlumpnum = lumpinfo[i].next - lumpinfo;
+            int nextlumpnum = (int) (lumpinfo[i].next - lumpinfo);
             newlumpinfo[i].next = &newlumpinfo[nextlumpnum];
         }
     }
@@ -272,7 +272,7 @@ int W_CheckNumForName (char* name)
         {
             if (!strncasecmp(lump_p->name, name, 8))
             {
-                return lump_p - lumpinfo;
+                return (int) (lump_p - lumpinfo);
             }
         }
     } 
@@ -353,7 +353,7 @@ void W_ReadLump(unsigned int lump, void *dest)
 	
     I_BeginRead ();
 	
-    c = W_Read(l->wad_file, l->position, dest, l->size);
+    c = (int) W_Read(l->wad_file, l->position, dest, l->size);
 
     if (c < l->size)
     {

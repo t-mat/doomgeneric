@@ -119,7 +119,7 @@ boolean M_WriteFile(char *name, void *source, int length)
     if (handle == NULL)
 	return false;
 
-    count = fwrite(source, 1, length, handle);
+    count = (int) fwrite(source, 1, length, handle);
     fclose(handle);
 	
     if (count < length)
@@ -149,7 +149,7 @@ int M_ReadFile(char *name, byte **buffer)
     length = M_FileLength(handle);
     
     buf = Z_Malloc (length, PU_STATIC, NULL);
-    count = fread(buf, 1, length, handle);
+    count = (int) fread(buf, 1, length, handle);
     fclose (handle);
 	
     if (count < length)
@@ -263,8 +263,8 @@ char *M_StrCaseStr(char *haystack, char *needle)
     unsigned int len;
     unsigned int i;
 
-    haystack_len = strlen(haystack);
-    needle_len = strlen(needle);
+    haystack_len = (unsigned int) strlen(haystack);
+    needle_len = (unsigned int) strlen(needle);
 
     if (haystack_len < needle_len)
     {
@@ -495,10 +495,10 @@ int M_vsnprintf(char *buf, size_t buf_len, const char *s, va_list args)
 
     // If truncated, change the final char in the buffer to a \0.
     // A negative result indicates a truncated buffer on Windows.
-    if (result < 0 || result >= buf_len)
+    if (result < 0 || result >= (int) buf_len)
     {
         buf[buf_len - 1] = '\0';
-        result = buf_len - 1;
+        result = (int) (buf_len - 1);
     }
 
     return result;
@@ -519,7 +519,7 @@ int M_snprintf(char *buf, size_t buf_len, const char *s, ...)
 
 char *M_OEMToUTF8(const char *oem)
 {
-    unsigned int len = strlen(oem) + 1;
+    unsigned int len = (unsigned int) (strlen(oem) + 1);
     wchar_t *tmp;
     char *result;
 

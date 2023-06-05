@@ -342,7 +342,7 @@ static void CheckSteamGUSPatches(void)
         return;
     }
 
-    len = strlen(install_path) + strlen(STEAM_BFG_GUS_PATCHES) + 20;
+    len = (int) (strlen(install_path) + strlen(STEAM_BFG_GUS_PATCHES) + 20);
     patch_path = malloc(len);
     M_snprintf(patch_path, len, "%s\\%s\\ACBASS.PAT",
                install_path, STEAM_BFG_GUS_PATCHES);

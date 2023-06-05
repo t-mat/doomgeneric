@@ -38,6 +38,7 @@ typedef struct
     byte buttons;
     // villsa [STRIFE] according to the asm,
     // consistancy is a short, not a byte
+    // NOTE (2023-06-05, @t-mat) : See also note in saveg_read_ticcmd_t().
     byte consistancy;           // checks for net game
 
     // villsa - Strife specific:
