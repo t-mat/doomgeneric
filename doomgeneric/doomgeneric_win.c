@@ -2,6 +2,8 @@
 
 #include "doomgeneric.h"
 
+#include "doomgeneric_amalgamed.c"
+
 #include <stdio.h>
 
 #include <Windows.h>
