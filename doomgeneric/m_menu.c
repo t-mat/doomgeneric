@@ -452,7 +452,7 @@ enum
     load_end
 } load_e;
 
-menuitem_t LoadMenu[]=
+menuitem_t m_menu_LoadMenu[]=
 {
     {1,"", M_LoadSelect,'1'},
     {1,"", M_LoadSelect,'2'},
@@ -466,7 +466,7 @@ menu_t  LoadDef =
 {
     load_end,
     &MainDef,
-    LoadMenu,
+    m_menu_LoadMenu,
     M_DrawLoad,
     80,54,
     0
@@ -514,12 +514,12 @@ void M_ReadSaveStrings(void)
         if (handle == NULL)
         {
             M_StringCopy(savegamestrings[i], EMPTYSTRING, SAVESTRINGSIZE);
-            LoadMenu[i].status = 0;
+            m_menu_LoadMenu[i].status = 0;
             continue;
         }
 	fread(&savegamestrings[i], 1, SAVESTRINGSIZE, handle);
 	fclose(handle);
-	LoadMenu[i].status = 1;
+	m_menu_LoadMenu[i].status = 1;
     }
 }
 
