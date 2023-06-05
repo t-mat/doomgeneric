@@ -2,6 +2,7 @@
 
 !/doomgeneric/*.c
 !/doomgeneric/*.h
+!/doomgeneric/*.py
 !/doomgeneric/Makefile*
 !/doomgeneric/*.vcxproj
 
