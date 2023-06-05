@@ -79,10 +79,10 @@ static LRESULT CALLBACK wndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lPara
 		ExitProcess(0);
 		break;
 	case WM_KEYDOWN:
-		addKeyToQueue(1, wParam);
+		addKeyToQueue(1, (unsigned char) wParam);
 		break;
 	case WM_KEYUP:
-		addKeyToQueue(0, wParam);
+		addKeyToQueue(0, (unsigned char) wParam);
 		break;
 	default:
 		return DefWindowProcA(hwnd, msg, wParam, lParam);
