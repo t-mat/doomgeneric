@@ -459,28 +459,6 @@ void Z_ChangeUser(void *ptr, void **user)
 }
 
 
-
-//
-// Z_FreeMemory
-//
-int Z_FreeMemory (void)
-{
-    memblock_t*		block;
-    int			free;
-	
-    free = 0;
-    
-    for (block = mainzone->blocklist.next ;
-         block != &mainzone->blocklist;
-         block = block->next)
-    {
-        if (block->tag == PU_FREE || block->tag >= PU_PURGELEVEL)
-            free += block->size;
-    }
-
-    return free;
-}
-
 unsigned int Z_ZoneSize(void)
 {
     return mainzone->size;
