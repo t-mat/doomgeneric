@@ -1,5 +1,5 @@
 //
-// .\am_map.c
+// filename=.\am_map.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -1357,7 +1357,7 @@ void AM_Drawer (void)
 
 }
 //
-// .\doomdef.c
+// filename=.\doomdef.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -1388,7 +1388,7 @@ void AM_Drawer (void)
 
 
 //
-// .\doomgeneric.c
+// filename=.\doomgeneric.c
 //
 #include <stdio.h>
 
@@ -1418,7 +1418,7 @@ void doomgeneric_Create(int argc, char **argv)
 }
 
 //
-// .\doomstat.c
+// filename=.\doomstat.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -1456,7 +1456,7 @@ boolean	modifiedgame;
 
 
 //
-// .\dstrings.c
+// filename=.\dstrings.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -1532,7 +1532,7 @@ char* endmsg[] =
 
 
 //
-// .\dummy.c
+// filename=.\dummy.c
 //
 /*
  * dummy.c
@@ -1588,7 +1588,7 @@ void I_InitTimidityConfig(void)
  *  eof                                                                *
  *---------------------------------------------------------------------*/
 //
-// .\d_event.c
+// filename=.\d_event.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -1654,7 +1654,7 @@ event_t *D_PopEvent(void)
 
 
 //
-// .\d_items.c
+// filename=.\d_items.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -1785,7 +1785,7 @@ weaponinfo_t	weaponinfo[NUMWEAPONS] =
 
 
 //
-// .\d_iwad.c
+// filename=.\d_iwad.c
 //
 //
 // Copyright(C) 2005-2014 Simon Howard
@@ -2636,7 +2636,7 @@ char *D_SuggestGameName(GameMission_t mission, GameMode_t mode)
 }
 
 //
-// .\d_loop.c
+// filename=.\d_loop.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -3465,7 +3465,7 @@ void D_RegisterLoopCallbacks(loop_interface_t *i)
     loop_interface = i;
 }
 //
-// .\d_main.c
+// filename=.\d_main.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -5313,7 +5313,7 @@ void D_DoomMain (void)
 }
 
 //
-// .\d_mode.c
+// filename=.\d_mode.c
 //
 //
 // Copyright(C) 2005-2014 Simon Howard
@@ -5525,7 +5525,7 @@ char *D_GameMissionString(GameMission_t mission)
 }
 
 //
-// .\d_net.c
+// filename=.\d_net.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -5809,7 +5809,7 @@ void D_CheckNetGame (void)
 }
 
 //
-// .\f_finale.c
+// filename=.\f_finale.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -6530,7 +6530,7 @@ void F_Drawer (void)
 
 
 //
-// .\f_wipe.c
+// filename=.\f_wipe.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -6827,7 +6827,7 @@ wipe_ScreenWipe
 }
 
 //
-// .\gusconf.c
+// filename=.\gusconf.c
 //
 //
 // Copyright(C) 2005-2014 Simon Howard
@@ -7101,7 +7101,7 @@ boolean GUS_WriteConfig(char *path)
 }
 
 //
-// .\g_game.c
+// filename=.\g_game.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -9407,7 +9407,7 @@ boolean G_CheckDemoStatus (void)
  
  
 //
-// .\hu_lib.c
+// filename=.\hu_lib.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -9757,7 +9757,7 @@ void HUlib_eraseIText(hu_itext_t* it)
 }
 
 //
-// .\hu_stuff.c
+// filename=.\hu_stuff.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -10401,7 +10401,7 @@ boolean HU_Responder(event_t *ev)
 
 }
 //
-// .\icon.c
+// filename=.\icon.c
 //
 static int icon_w = 32;
 static int icon_h = 32;
@@ -10666,7 +10666,7 @@ static unsigned char icon_data[] = {
     
 };
 //
-// .\info.c
+// filename=.\info.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -15331,7 +15331,7 @@ mobjinfo_t mobjinfo[NUMMOBJTYPES] = {
 };
 
 //
-// .\i_cdmus.c
+// filename=.\i_cdmus.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -15577,7 +15577,7 @@ int I_CDMusTrackLength(int track_num)
 }
 
 //
-// .\i_endoom.c
+// filename=.\i_endoom.c
 //
 //
 // Copyright(C) 2005-2014 Simon Howard
@@ -15661,7 +15661,7 @@ void I_Endoom(byte *endoom_data)
 }
 
 //
-// .\i_input.c
+// filename=.\i_input.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -16005,7 +16005,7 @@ void I_InitInput(void)
 }
 
 //
-// .\i_joystick.c
+// filename=.\i_joystick.c
 //
 //
 // Copyright(C) 2005-2014 Simon Howard
@@ -16367,7 +16367,7 @@ void I_BindJoystickVariables(void)
 }
 
 //
-// .\i_scale.c
+// filename=.\i_scale.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -17822,7 +17822,7 @@ screen_mode_t mode_squash_5x = {
 
 
 //
-// .\i_sound.c
+// filename=.\i_sound.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -18263,7 +18263,7 @@ void I_BindSoundVariables(void)
 }
 
 //
-// .\i_system.c
+// filename=.\i_system.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -18840,7 +18840,7 @@ boolean I_GetMemoryValue(unsigned int offset, void *value, int size)
 }
 
 //
-// .\i_timer.c
+// filename=.\i_timer.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -18939,7 +18939,7 @@ void I_InitTimer(void)
 }
 
 //
-// .\i_video.c
+// filename=.\i_video.c
 //
 // Emacs style mode select   -*- C++ -*- 
 //-----------------------------------------------------------------------------
@@ -19356,7 +19356,7 @@ void I_CheckIsScreensaver (void)
 {
 }
 //
-// .\memio.c
+// filename=.\memio.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -19556,7 +19556,7 @@ int mem_fseek(MEMFILE *stream, signed long position, mem_rel_t whence)
 
 
 //
-// .\mus2mid.c
+// filename=.\mus2mid.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -20296,7 +20296,7 @@ int main(int argc, char *argv[])
 #endif
 
 //
-// .\m_argv.c
+// filename=.\m_argv.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -20564,7 +20564,7 @@ char *M_GetExecutableName(void)
 }
 
 //
-// .\m_bbox.c
+// filename=.\m_bbox.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -20621,7 +20621,7 @@ M_AddToBox
 
 
 //
-// .\m_cheat.c
+// filename=.\m_cheat.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -20713,7 +20713,7 @@ cht_GetParam
 
 
 //
-// .\m_config.c
+// filename=.\m_config.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -22844,7 +22844,7 @@ char *M_GetSaveGameDir(char *iwadname)
 }
 
 //
-// .\m_controls.c
+// filename=.\m_controls.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -23245,7 +23245,7 @@ void M_ApplyPlatformDefaults(void)
 }
 
 //
-// .\m_fixed.c
+// filename=.\m_fixed.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -23310,7 +23310,7 @@ fixed_t FixedDiv(fixed_t a, fixed_t b)
 }
 
 //
-// .\m_menu.c
+// filename=.\m_menu.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -25438,7 +25438,7 @@ void M_Init (void)
 }
 
 //
-// .\m_misc.c
+// filename=.\m_misc.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -25977,7 +25977,7 @@ char *M_OEMToUTF8(const char *oem)
 #endif
 
 //
-// .\m_random.c
+// filename=.\m_random.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -26045,7 +26045,7 @@ void M_ClearRandom (void)
     rndindex = prndindex = 0;
 }
 //
-// .\p_ceilng.c
+// filename=.\p_ceilng.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -26372,7 +26372,7 @@ int	EV_CeilingCrushStop(line_t	*line)
     return rtn;
 }
 //
-// .\p_doors.c
+// filename=.\p_doors.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -27153,7 +27153,7 @@ EV_SlidingDoor
 }
 #endif
 //
-// .\p_enemy.c
+// filename=.\p_enemy.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -29162,7 +29162,7 @@ void A_PlayerScream (mobj_t* mo)
     S_StartSound (mo, sound);
 }
 //
-// .\p_floor.c
+// filename=.\p_floor.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -29711,7 +29711,7 @@ EV_BuildStairs
 }
 
 //
-// .\p_inter.c
+// filename=.\p_inter.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -30636,7 +30636,7 @@ P_DamageMobj
 }
 
 //
-// .\p_lights.c
+// filename=.\p_lights.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -30989,7 +30989,7 @@ void P_SpawnGlowingLight(sector_t*	sector)
 }
 
 //
-// .\p_map.c
+// filename=.\p_map.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -32440,7 +32440,7 @@ static void SpechitOverrun(line_t *ld)
 }
 
 //
-// .\p_maputl.c
+// filename=.\p_maputl.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -33444,7 +33444,7 @@ P_PathTraverse
 
 
 //
-// .\p_mobj.c
+// filename=.\p_mobj.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -34496,7 +34496,7 @@ P_SpawnPlayerMissile
 }
 
 //
-// .\p_plats.c
+// filename=.\p_plats.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -34803,7 +34803,7 @@ void P_RemoveActivePlat(plat_t* plat)
     I_Error ("P_RemoveActivePlat: can't find plat!");
 }
 //
-// .\p_pspr.c
+// filename=.\p_pspr.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -35694,7 +35694,7 @@ void P_MovePsprites (player_t* player)
 
 
 //
-// .\p_saveg.c
+// filename=.\p_saveg.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -37594,7 +37594,7 @@ void P_UnArchiveSpecials (void)
 }
 
 //
-// .\p_setup.c
+// filename=.\p_setup.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -38452,7 +38452,7 @@ void P_Init (void)
 
 
 //
-// .\p_sight.c
+// filename=.\p_sight.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -38805,7 +38805,7 @@ P_CheckSight
 
 
 //
-// .\p_spec.c
+// filename=.\p_spec.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -40297,7 +40297,7 @@ void P_SpawnSpecials (void)
     //	P_InitSlidingDoorFrames();
 }
 //
-// .\p_switch.c
+// filename=.\p_switch.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -40948,7 +40948,7 @@ P_UseSpecialLine
 }
 
 //
-// .\p_telept.c
+// filename=.\p_telept.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -41084,7 +41084,7 @@ EV_Teleport
 }
 
 //
-// .\p_tick.c
+// filename=.\p_tick.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -41238,7 +41238,7 @@ void P_Ticker (void)
     leveltime++;	
 }
 //
-// .\p_user.c
+// filename=.\p_user.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -41620,7 +41620,7 @@ void P_PlayerThink (player_t* player)
 
 
 //
-// .\r_bsp.c
+// filename=.\r_bsp.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -42196,7 +42196,7 @@ void R_RenderBSPNode (int bspnum)
 
 
 //
-// .\r_data.c
+// filename=.\r_data.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -43111,7 +43111,7 @@ void R_PrecacheLevel (void)
 
 
 //
-// .\r_draw.c
+// filename=.\r_draw.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -44089,7 +44089,7 @@ void R_DrawViewBorder (void)
  
  
 //
-// .\r_main.c
+// filename=.\r_main.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -44983,7 +44983,7 @@ void R_RenderPlayerView (player_t* player)
     NetUpdate ();				
 }
 //
-// .\r_plane.c
+// filename=.\r_plane.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -45432,7 +45432,7 @@ void R_DrawPlanes (void)
     }
 }
 //
-// .\r_segs.c
+// filename=.\r_segs.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -46178,7 +46178,7 @@ R_StoreWallRange
 }
 
 //
-// .\r_sky.c
+// filename=.\r_sky.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -46233,7 +46233,7 @@ void R_InitSkyMap (void)
 }
 
 //
-// .\r_things.c
+// filename=.\r_things.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -47218,7 +47218,7 @@ void R_DrawMasked (void)
 
 
 //
-// .\sha1.c
+// filename=.\sha1.c
 //
 /* sha1.c - SHA1 hash function
  *	Copyright (C) 1998, 1999, 2000, 2001 Free Software Foundation, Inc.
@@ -47540,7 +47540,7 @@ void SHA1_UpdateString(sha1_context_t *context, char *str)
 }
 
 //
-// .\sounds.c
+// filename=.\sounds.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -47772,7 +47772,7 @@ sfxinfo_t S_sfx[] =
 };
 
 //
-// .\statdump.c
+// filename=.\statdump.c
 //
  /*
 
@@ -48167,7 +48167,7 @@ void StatDump(void)
 }
 
 //
-// .\st_lib.c
+// filename=.\st_lib.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -48454,7 +48454,7 @@ STlib_updateBinIcon
 }
 
 //
-// .\st_stuff.c
+// filename=.\st_stuff.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -49873,7 +49873,7 @@ void ST_Init (void)
 }
 
 //
-// .\s_sound.c
+// filename=.\s_sound.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -50546,7 +50546,7 @@ void S_StopMusic(void)
 }
 
 //
-// .\tables.c
+// filename=.\tables.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -52776,7 +52776,7 @@ const byte gammatable[5][256] =
 };
 
 //
-// .\v_video.c
+// filename=.\v_video.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -53711,7 +53711,7 @@ void V_DrawMouseSpeedBox(int speed)
 }
 
 //
-// .\wi_stuff.c
+// filename=.\wi_stuff.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -55543,7 +55543,7 @@ void WI_Start(wbstartstruct_t* wbstartstruct)
 	WI_initStats();
 }
 //
-// .\w_checksum.c
+// filename=.\w_checksum.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -55633,7 +55633,7 @@ void W_Checksum(sha1_digest_t digest)
 }
 
 //
-// .\w_file.c
+// filename=.\w_file.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -55731,7 +55731,7 @@ size_t W_Read(wad_file_t *wad, unsigned int offset,
 }
 
 //
-// .\w_file_stdc.c
+// filename=.\w_file_stdc.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -55830,7 +55830,7 @@ wad_file_class_t stdc_wad_file =
 
 
 //
-// .\w_main.c
+// filename=.\w_main.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -56031,7 +56031,7 @@ boolean W_ParseCommandLine(void)
 }
 
 //
-// .\w_wad.c
+// filename=.\w_wad.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -56646,7 +56646,7 @@ void W_CheckCorrectIWAD(GameMission_t mission)
 }
 
 //
-// .\z_zone.c
+// filename=.\z_zone.c
 //
 //
 // Copyright(C) 1993-1996 Id Software, Inc.
@@ -57108,28 +57108,6 @@ void Z_ChangeUser(void *ptr, void **user)
     *user = ptr;
 }
 
-
-
-//
-// Z_FreeMemory
-//
-int Z_FreeMemory (void)
-{
-    memblock_t*		block;
-    int			free;
-	
-    free = 0;
-    
-    for (block = mainzone->blocklist.next ;
-         block != &mainzone->blocklist;
-         block = block->next)
-    {
-        if (block->tag == PU_FREE || block->tag >= PU_PURGELEVEL)
-            free += block->size;
-    }
-
-    return free;
-}
 
 unsigned int Z_ZoneSize(void)
 {
