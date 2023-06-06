@@ -355,7 +355,7 @@ void R_AddLine (seg_t*	line)
 // Returns true
 //  if some part of the bbox might be visible.
 //
-int	checkcoord[12][4] =
+static const int checkcoord[12][4] =
 {
     {3,0,2,1},
     {3,0,2,0},
